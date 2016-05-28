@@ -1,6 +1,7 @@
 #include <QtGui/QWindow>
 #include <QtGui/QOpenGLFunctions>
 
+
 class QPainter;
 class QOpenGLContext;
 class QOpenGLPaintDevice;
@@ -25,13 +26,12 @@ public slots:
 
 protected:
     bool event(QEvent *event) Q_DECL_OVERRIDE;
-
     void exposeEvent(QExposeEvent *event) Q_DECL_OVERRIDE;
 
 private:
     bool m_update_pending;
     bool m_animating;
 
-    QOpenGLContext *m_context;
-    QOpenGLPaintDevice *m_device;
+    QOpenGLContext     *m_context;
+    QOpenGLPaintDevice *m_device ;
 };
