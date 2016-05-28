@@ -15,5 +15,5 @@ public:
     virtual bool present(const QVideoFrame &frame) override;
 
 signals:
-    void frameAvailable(QImage frame);
+    void frameAvailable(QVideoFrame frame);
 };

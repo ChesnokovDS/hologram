@@ -1,3 +1,5 @@
+#pragma once
+
 #include <QtGui/QWindow>
 #include <QtGui/QOpenGLFunctions>
 
@@ -28,7 +30,7 @@ protected:
     bool event(QEvent *event) Q_DECL_OVERRIDE;
     void exposeEvent(QExposeEvent *event) Q_DECL_OVERRIDE;
 
-private:
+protected:
     bool m_update_pending;
     bool m_animating;
 

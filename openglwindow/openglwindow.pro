@@ -17,7 +17,8 @@ SOURCES += \
     videorenderer.cpp \
     cameravideosurface.cpp \
     cameracapturemanager.cpp \
-    cameracapturerenderer.cpp
+    cameracapturerenderer.cpp \
+    hologramwindow.cpp
 
 HEADERS += \
     openglwindow.h \
@@ -25,7 +26,8 @@ HEADERS += \
     videorenderer.h \
     cameravideosurface.h \
     cameracapturemanager.h \
-    cameracapturerenderer.h
+    cameracapturerenderer.h \
+    hologramwindow.h
 
 target.path = $$[QT_INSTALL_EXAMPLES]/gui/openglwindow
 INSTALLS += target

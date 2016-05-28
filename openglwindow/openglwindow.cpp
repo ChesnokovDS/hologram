@@ -96,8 +96,8 @@ void OpenGLWindow::renderNow()
 
     m_context->swapBuffers(this);
 
-    if (m_animating)
-        renderLater();
+//    if (m_animating)
+//        renderLater();
 }
 
 void OpenGLWindow::setAnimating(bool animating)
