@@ -13,8 +13,6 @@ LIBS += -LC:/Qt/vlc-qt/bin
 SOURCES += \
     main.cpp \
     openglwindow.cpp \
-    trianglewindow.cpp \
-    videorenderer.cpp \
     cameravideosurface.cpp \
     cameracapturemanager.cpp \
     cameracapturerenderer.cpp \
@@ -22,8 +20,6 @@ SOURCES += \
 
 HEADERS += \
     openglwindow.h \
-    trianglewindow.h \
-    videorenderer.h \
     cameravideosurface.h \
     cameracapturemanager.h \
     cameracapturerenderer.h \
