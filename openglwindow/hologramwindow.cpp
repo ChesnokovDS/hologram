@@ -108,13 +108,13 @@ void HologramWindow::render()
 
 void HologramWindow::onFrameAvailable(const QVideoFrame &frame)
 {
+    if ( !m_context)
+        return;
+
     if (frame.isMapped())
     {
         if (m_initializedTexture)
         {
-            //m_context->makeCurrent();
-//            glBindTexture(GL_TEXTURE_2D, m_texture);
-
             m_context->makeCurrent(this);
             m_texture->bind();
             glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, frame.width(), frame.height(),0, GL_BGRA, GL_UNSIGNED_BYTE, frame.bits());
